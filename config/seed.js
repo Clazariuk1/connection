@@ -5,6 +5,11 @@
 // we must continue tweaking accordingly as our needs evolve. BE WARY. the for loops must be individually updated for each model alteration.
 
 
+// make a NEW branch every time a new feature, to prevent multiple merges going on. every mathew update, switch back to main, git pull upstream main, make new branch and start from there to enter into new branch mode.
+
+// create new branch line : git checkout -b NAME
+// above every time a pull request is made/completed. next phase, next branch.
+
 require('dotenv').config()
 require('./database')
 
