@@ -32,7 +32,7 @@ const JobPage = ({ user, setUser }) => {
         return <div>Loading...</div>;
     }
 
-    console.log("Number of job listings:", jobListings.length);
+    // console.log("Number of job listings:", jobListings.length);
 
     return (
         <div className={styles.jobPage}>

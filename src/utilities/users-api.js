@@ -14,12 +14,13 @@ export function update(data, id) {
 }
 
 // Below : for search bar needs
+// or BASE_URL, 'GET' ???
 
 export function getAllUsers() {
-    return sendRequest(`${BASE_URL}/`, 'GET')
+    console.log("Jokes!")
+    return sendRequest(BASE_URL)
 }
 
 export function getUserById(id) {
     return sendRequest(`${BASE_URL}/${id}`, 'GET', id);
 }
-

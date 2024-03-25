@@ -12,7 +12,7 @@ const http = require("http")
 const socketio = require("socket.io")
 const path = require('path')
 const cors = require("cors");
-const httpserver = http.Server(app) // is this correct or does this need to be .createServer?
+const httpserver = http.CreateServer(app) // is this correct or does this need to be .createServer?
 const io = socketio(httpserver)
 
 // must check if http.server has been updated since 2021 in node js docs.
@@ -36,6 +36,10 @@ const usernames = []
 //     methods: ["GET", "POST"],
 //   },
 // });
+
+io.on('connection', function(socket){
+  console.log('Please work, please I am begging you.')
+})
 
 io.on('connection', function(socket){
   socket.on('join_room', function(room, username){
